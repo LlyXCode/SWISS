@@ -111,7 +111,7 @@ end
 
 -- daftar link raw route (ubah ke link punyamu)
 routes = {
-    {"BASE → CP8", loadRoute("https://raw.githubusercontent.com/Bardenss/SWISS/refs/heads/main/01.lua")},
+    {"BASE → CP8", loadRoute("https://raw.githubusercontent.com/LlyXCode/SWISS/refs/heads/main/01.lua")},
 }
 
 -- ============================================================
@@ -362,15 +362,15 @@ end
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
 local Window = WindUI:CreateWindow({
-    Title = "BANTAI GUNUNG",
+    Title = "LlyXCode 〢 SWISS",
     Icon = "lucide:mountain-snow",
-    Author = "bardenss",
-    Folder = "BRDNHub",
+    Author = "LlyXCode",
+    Folder = "LlyXCode",
     Size = UDim2.fromOffset(580, 460),
     Theme = "Midnight",
     Resizable = true,
     SideBarWidth = 200,
-    Watermark = "bardenss",
+    Watermark = "LlyXCode",
     User = {
         Enabled = true,
         Anonymous = false,
@@ -524,7 +524,7 @@ SettingsTab:Button({
     Icon = "lucide:layers-2",
     Desc = "Klik untuk pindah ke private server",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Bardenss/PS/refs/heads/main/ps"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LlyXCode/PS/refs/heads/main/ps"))()
     end
 })
 -- ============================================================
@@ -736,7 +736,7 @@ InfoTab:Button({
     Desc = "Salin link Discord ke clipboard",
     Callback = function()
         if setclipboard then
-            setclipboard("https://discord.gg/cjZPqHRV")
+            setclipboard("https://discord.gg/G")
             logAndNotify("Discord", "Link berhasil disalin!")
         else
             notify("Clipboard Error", "setclipboard tidak tersedia!", 2)
@@ -758,7 +758,7 @@ Replay/route system untuk checkpoint.
 - Run CPx → CPy = jalur spesifik
 - Playback Speed = atur kecepatan replay (0.25x - 3.00x)
 
-Own bardenss
+Own LlyXCode
     ]],
     TextSize = 16,
     TextTransparency = 0.25,
@@ -771,7 +771,7 @@ Window:DisableTopbarButtons({
 
 -- Open button cantik
 Window:EditOpenButton({
-    Title = "BANTAI GUNUNG",
+    Title = "LlyXCode",
     Icon = "geist:logo-nuxt",
     CornerRadius = UDim.new(0,16),
     StrokeThickness = 2,
@@ -927,7 +927,7 @@ tampTab:Button({
 })
 
 -- Final notif
-notify("BANTAI GUNUNG", "Script sudan di load, gunakan dengan bijak.", 3)
+notify("LlyXCode", "Script sudan di load, gunakan dengan bijak.", 3)
 
 pcall(function()
     Window:Show()
